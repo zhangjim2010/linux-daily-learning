@@ -1,1 +1,25 @@
-hello world!
+hello Ubantu!
+hello anaconda!
+hello python!
+hello github!
+
+迫不及待地在Ubantu系统里遨游了一圈，情绪恢复正常。
+
+装linux系统是要学习或者搞点事情的呀，于是到处找软件资源，上知乎寻求方法。
+
+先下载了个anaconda3.sh,也不知道怎么安装，于是照葫芦画瓢，进入到本地下载目录
+	bush anaconda.sh
+居然就安装成功了！问题是没有出现终端命令行（base）标志，试了试python也能用。打开anaconda-navigator,找到scode打开后，增加了python环境，简单试了试解释器也可以用，于是就打算把各个程序都升级到最新版。
+
+这一升级可是一个坑接着一个坑，整整折腾了2天。
+先是升级pip，
+	pip install --upgrade pip
+运行后下载各种包，漫长的等待后是满满一屏的错误提示，当时也不知道，看着进度条是有的包下载完了，有的下载一部分就跳过去了，有timeout故障，也有很多不知所云的故障，试了几次没法通过，只好暂时搁置不管了。
+
+再去试conda升级，
+	conda update conda
+这回是更长时间的等待，最后也是满满几屏的错误提示，更新几次无果，网速基本在2k左右。
+换ananconda接着升级，
+	conda update anaconda
+同上，折腾一晚上，什么也没弄成。
+
