@@ -1,0 +1,17 @@
+早上起来，在知乎上阅读了很多关于pip更新、conda更新方面的文章。综合各方面信息，认为其他的故障报告都是虚假的，可能是在更新的过程中部分包更新了，部分包没更新，造成了一些不兼容的情况，于是把下载包的网速只有2K并且有timeout故障作为主要问题来处理。
+
+既然网络访问不稳定，那就设置增加访问超时时长
+	pip --default-timeout=1000 install -U pip
+至此pip更新勉强成功，虽然时间稍微长了点。但是更新conda的时候还是不行，家里的网速应该是没有问题的，因为网络电视看国庆各种庆典活动都正常，那就是国外网站访问的问题，于是开始认真配置清华源。
+	conda config --add channels 'https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/'
+	conda config --add channels 'https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/'
+	conda config --show
+增加这两个清华源的配置，并查看配置，确认添加成功后，运行conda更新尝试。
+	conda update conda
+真是畅快淋漓，下载安装包的速度基本在30-50k，甚至更高，很快conda升级便成功完成。下一步升级ananconda
+	conda update anaconda
+这一次就没那么幸运啦，环境分析后出现了很多不兼容的软件（inconsistancy），anaonda经过几次升级，估计里面版本乱了套了，而且每次环境分析报告出来后直接死机，真的是不知所措啊！重启了几次系统后，决定试一下另外一个命令。
+	conda update --all
+终于更新顺利完成！
+总结：一开始被各种错误报告搞晕，最终找到主要问题，解决了国外网站访问不稳定的问题，配置了清华源网站作为国内稳定的下载源，一次性解决了所有问题！
+	
