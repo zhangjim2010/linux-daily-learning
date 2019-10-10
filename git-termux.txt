@@ -18,6 +18,11 @@ git push origin master
 于是安装OPENSSH
 安装结束后，只看到本地local的SSH私钥和公钥，没找到github网站的公钥，怎么办呢？
 
-id_rsa.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCkZ2dc2maPnUEvsYeoUsRv9/Dcu9F2wWRc7awxqBt/WYz48uB8OAPzyAfsi+9Y0+nxQaPgZOIC+SiI8nzstuEdpMV7JqZPYIUQz8cvmdgq6ei918UveXJPaKJPnhZ1asXMO0x/P7+Rj4noV5s2mpv0/YdEBYgrXL76ILgnsoIN9CtoKp4h+TdJjg4rhs/Y2T04uZFsxi1zZrxZQRGtQBFa+8WWza13cnZbukOkyfgZX/m3Z9nCgczRuwfjigj7/M/9obgEv6nfXJXy2f0efwBvhQu16Ud/kLvy1MyrR8MR21m93+u5uOh77eWcIygceY66bEpSQmaz39MW/j81l+kZMOcvAwZqBkDQ4wiw5Y4W2oOkavQsv8dNegNTSQWuYQrojPzoQy6wWidKy8KKH6UhfkPsznVJfn47V5h2HilAX1N62yiLW66X4cRsGvUzbSp1pXtHrvyNar6YOZpmUZvK02PIn8bCsV+r9mbNanEJtEuGp4b/sV4vzniZZ8n3ez0= 18903999919@163.com
+进入家目录，找到隐藏目录.ssh并进入找到
+id_rsa.pub文件，把内容全部copy下来
+
+进入github-settings-ssh and gpg key-new ssh
+那刚才copy的内容paste过来，OK
+再次push 就不需要输入用户名和密码了。
+
 
