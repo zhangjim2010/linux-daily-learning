@@ -4,3 +4,13 @@
 不多说了，配置一下用户名和EMAIL。
 CLONE我的linux-daily-learning这个repo下来。
 现在，上传本文件push测试。
+测试顺利成功，在此总结所用指令：
+git config --global user.name "你的用户名"
+git config --global user.email "你的Email"
+git config --list
+git clone https://github.com/username/yourrepo.git
+vim xxxx.txt
+git add xxxx.txt
+git commit -m "提交信息"
+git push origin master
+然后根据提示，输入你的github网站用户名和密码即可。
