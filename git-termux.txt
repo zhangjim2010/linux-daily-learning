@@ -18,7 +18,6 @@ git push origin master
 于是安装OPENSSH
 安装结束后，只看到本地local的SSH私钥和公钥，没找到github网站的公钥，怎么办呢？
 
-termux/files/home/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:+iocADWcejLHZlzp/lBBHNwT6vfty7QnsxYOl/Nvs28 18903999919@163.com
+id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCkZ2dc2maPnUEvsYeoUsRv9/Dcu9F2wWRc7awxqBt/WYz48uB8OAPzyAfsi+9Y0+nxQaPgZOIC+SiI8nzstuEdpMV7JqZPYIUQz8cvmdgq6ei918UveXJPaKJPnhZ1asXMO0x/P7+Rj4noV5s2mpv0/YdEBYgrXL76ILgnsoIN9CtoKp4h+TdJjg4rhs/Y2T04uZFsxi1zZrxZQRGtQBFa+8WWza13cnZbukOkyfgZX/m3Z9nCgczRuwfjigj7/M/9obgEv6nfXJXy2f0efwBvhQu16Ud/kLvy1MyrR8MR21m93+u5uOh77eWcIygceY66bEpSQmaz39MW/j81l+kZMOcvAwZqBkDQ4wiw5Y4W2oOkavQsv8dNegNTSQWuYQrojPzoQy6wWidKy8KKH6UhfkPsznVJfn47V5h2HilAX1N62yiLW66X4cRsGvUzbSp1pXtHrvyNar6YOZpmUZvK02PIn8bCsV+r9mbNanEJtEuGp4b/sV4vzniZZ8n3ez0= 18903999919@163.com
 
