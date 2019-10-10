@@ -1,0 +1,6 @@
+今天学习了安卓手机中一个非常好用的linux工具：Termux.
+首先安装VIM，以便编辑文件。
+然后安装了GIT，用它来更新日志。
+不多说了，配置一下用户名和EMAIL。
+CLONE我的linux-daily-learning这个repo下来。
+现在，上传本文件push测试。
