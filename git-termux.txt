@@ -14,3 +14,6 @@ git add xxxx.txt
 git commit -m "提交信息"
 git push origin master
 然后根据提示，输入你的github网站用户名和密码即可。
+可是每次都要输入用户名和密码，比较麻烦
+于是安装OPENSSH
+安装结束后，只看到本地local的SSH私钥和公钥，没找到github网站的公钥，怎么办呢？
