@@ -1,0 +1,21 @@
+keyboard in vim:
+i for insert
+a for append
+o for new line
+h for left
+j for down
+k for up
+l for right 
+d for delete
+f for forward
+q for quit
+w for next word
+b for back 
+n for next 
+v for visual 
+g for go 
+u for undo 
+y for copy 
+cat for cut 
+p for paste 
+
