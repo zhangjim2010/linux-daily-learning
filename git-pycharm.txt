@@ -1,0 +1,30 @@
+在pycharm上编了几段程序后，改来改去的，就突然想到pycharm中程序的版本控制问题。
+在几个菜单栏了逛了一圈，发现还真是有GIT，就是不知道怎么用，于是安装经验，先在github上新建一个repo，增加README文件，远程端应该是OK啦！
+
+回到pycharm这边，选择菜单：
+VCS-->checkout from version control-->Git
+打开后提示输入github远程URL，CLONE repo
+提示路径已经存在，我因为pycharm环境已经配置好，又编写了好几个py程序了，不想被覆盖，打算找找其它办法。
+继续选择菜单：
+BCS-->import into version control-->create Git repository
+打开后选择项目路径，确认即可。
+到终端检查
+ls -a
+项目路径中多了个.git隐藏目录
+git add .  (添加该项目路径下所有文件)
+git commit -m "第一次添加文件到repo"
+git push origin master
+不料报错：
+no tracked branch Configured for branch master or the branch doesn't exist.
+执行：
+git branch --set-upstream-to=origin/master master
+把分支master设置为跟踪来自origin的远程分支master
+再次推送 
+git push -u origin master
+继续报错：
+push rejected:push to origin/master was rejected
+这回可没招了，强推一次试试：
+git push -f origin master
+显示成功：All files are up-to-date
+
+再次验证：修改文件，然后直接在pycharm的工具栏上按顺序点击add,commit,update project，三次鼠标点击即可顺利完成版本控制的更新，so easy！
